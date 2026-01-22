@@ -198,7 +198,7 @@
             this.lbPlayer.AutoSize = true;
             this.lbPlayer.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPlayer.ForeColor = System.Drawing.Color.White;
-            this.lbPlayer.Location = new System.Drawing.Point(46, 138);
+            this.lbPlayer.Location = new System.Drawing.Point(35, 138);
             this.lbPlayer.Name = "lbPlayer";
             this.lbPlayer.Size = new System.Drawing.Size(194, 49);
             this.lbPlayer.TabIndex = 11;
@@ -209,7 +209,7 @@
             this.lbWinner.AutoSize = true;
             this.lbWinner.Font = new System.Drawing.Font("MS Reference Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWinner.ForeColor = System.Drawing.Color.Lime;
-            this.lbWinner.Location = new System.Drawing.Point(38, 266);
+            this.lbWinner.Location = new System.Drawing.Point(28, 266);
             this.lbWinner.Name = "lbWinner";
             this.lbWinner.Size = new System.Drawing.Size(242, 46);
             this.lbWinner.TabIndex = 13;
@@ -232,12 +232,13 @@
             this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRestart.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnRestart.Location = new System.Drawing.Point(46, 354);
+            this.btnRestart.Location = new System.Drawing.Point(41, 354);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(225, 46);
             this.btnRestart.TabIndex = 14;
             this.btnRestart.Text = "Restart Game";
             this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // Form1
             // 
