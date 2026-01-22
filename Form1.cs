@@ -46,98 +46,65 @@ namespace Project__13__Tic_Tac_Toe_Game
         }
 
 
+        bool CheckPictureBox(PictureBox pb1, PictureBox pb2, PictureBox pb3)
+        {
+            if (pb1.Tag.ToString() != "empty" && pb1.Tag.ToString() == pb2.Tag.ToString() && pb1.Tag.ToString() == pb3.Tag.ToString())
+            {
+                pb1.BackColor = Color.GreenYellow;
+                pb2.BackColor = Color.GreenYellow;
+                pb3.BackColor = Color.GreenYellow;
+
+                if (pb1.Tag.ToString() == "X")
+                    lbWinner.Text = "Player 1";
+                else if (pb1.Tag.ToString() == "O")
+                    lbWinner.Text = "Player 2";
+
+                return true;
+            }
+            return false;
+        }
+
+
+
         bool IsWinner()
         {
             // Player 1 is the winner (X)
 
-            if (pb1.Tag.ToString() == "X" && pb2.Tag.ToString() == "X" && pb3.Tag.ToString() == "X")
+            if (CheckPictureBox(pb1,pb2,pb3))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb1.Tag.ToString() == "X" && pb4.Tag.ToString() == "X" && pb7.Tag.ToString() == "X")
+            if (CheckPictureBox(pb1, pb4, pb7))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb2.Tag.ToString() == "X" && pb5.Tag.ToString() == "X" && pb8.Tag.ToString() == "X")
+            if (CheckPictureBox(pb2, pb5, pb8))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb3.Tag.ToString() == "X" && pb6.Tag.ToString() == "X" && pb9.Tag.ToString() == "X")
+            if (CheckPictureBox(pb3, pb6, pb9))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb4.Tag.ToString() == "X" && pb5.Tag.ToString() == "X" && pb6.Tag.ToString() == "X")
+            if (CheckPictureBox(pb4, pb5, pb6))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb7.Tag.ToString() == "X" && pb8.Tag.ToString() == "X" && pb9.Tag.ToString() == "X")
+            if (CheckPictureBox(pb7, pb8, pb9))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb1.Tag.ToString() == "X" && pb5.Tag.ToString() == "X" && pb9.Tag.ToString() == "X")
+            if (CheckPictureBox(pb1, pb5, pb9))
             {
-                lbWinner.Text = "Player 1";
                 return true;
             }
-            if (pb3.Tag.ToString() == "X" && pb5.Tag.ToString() == "X" && pb7.Tag.ToString() == "X")
+            if (CheckPictureBox(pb3, pb5, pb7))
             {
-                lbWinner.Text = "Player 1";
-                return true;
-            }
-
-
-
-            // Player 2 is the winner (O)
-
-            if (pb1.Tag.ToString() == "O" && pb2.Tag.ToString() == "O" && pb3.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb1.Tag.ToString() == "O" && pb4.Tag.ToString() == "O" && pb7.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb2.Tag.ToString() == "O" && pb5.Tag.ToString() == "O" && pb8.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb3.Tag.ToString() == "O" && pb6.Tag.ToString() == "O" && pb9.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb4.Tag.ToString() == "O" && pb5.Tag.ToString() == "O" && pb6.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb7.Tag.ToString() == "O" && pb8.Tag.ToString() == "O" && pb9.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb1.Tag.ToString() == "O" && pb5.Tag.ToString() == "O" && pb9.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
-                return true;
-            }
-            if (pb3.Tag.ToString() == "O" && pb5.Tag.ToString() == "O" && pb7.Tag.ToString() == "O")
-            {
-                lbWinner.Text = "Player 2";
                 return true;
             }
 
             return false;
-            
+
         }
 
 
@@ -223,53 +190,33 @@ namespace Project__13__Tic_Tac_Toe_Game
         }
 
 
+
+        void ResetPictureBoxToDefault(PictureBox pb)
+        {
+            pb.Image = Resources.QuestionMark;
+            pb.Tag = "empty";
+            pb.BackColor = Color.Transparent;
+            pb.Enabled = true;
+        }
+
         void RestartGame()
         {
 
             if(MessageBox.Show("Restart the game?","Confirmation",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
             {
-                pb1.Enabled = true;
-                pb2.Enabled = true;
-                pb3.Enabled = true;
-                pb4.Enabled = true;
-                pb5.Enabled = true;
-                pb6.Enabled = true;
-                pb7.Enabled = true;
-                pb8.Enabled = true;
-                pb9.Enabled = true;
-
-
-
                 lbPlayer.Text = "Player 1";
                 lbWinner.Text = "In Progress";
 
-                pb1.Image = Resources.QuestionMark;
-                pb1.Tag = "empty";
 
-                pb2.Image = Resources.QuestionMark;
-                pb2.Tag = "empty";
-
-                pb3.Image = Resources.QuestionMark;
-                pb3.Tag = "empty";
-
-                pb4.Image = Resources.QuestionMark;
-                pb4.Tag = "empty";
-
-                pb5.Image = Resources.QuestionMark;
-                pb5.Tag = "empty";
-
-                pb6.Image = Resources.QuestionMark;
-                pb6.Tag = "empty";
-
-                pb7.Image = Resources.QuestionMark;
-                pb7.Tag = "empty";
-
-                pb8.Image = Resources.QuestionMark;
-                pb8.Tag = "empty";
-
-                pb9.Image = Resources.QuestionMark;
-                pb9.Tag = "empty";
-
+                ResetPictureBoxToDefault(pb1);
+                ResetPictureBoxToDefault(pb2);
+                ResetPictureBoxToDefault(pb3);
+                ResetPictureBoxToDefault(pb4);
+                ResetPictureBoxToDefault(pb5);
+                ResetPictureBoxToDefault(pb6);
+                ResetPictureBoxToDefault(pb7);
+                ResetPictureBoxToDefault(pb8);
+                ResetPictureBoxToDefault(pb9);
 
             }
 

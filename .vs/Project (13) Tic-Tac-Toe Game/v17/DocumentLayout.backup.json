@@ -30,9 +30,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\My Projects\\Project (13) Tic-Tac-Toe Game\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "D:\\My Projects\\Project (13) Tic-Tac-Toe Game\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAAwBEBAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\My Projects\\Project (13) Tic-Tac-Toe Game\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAABIBAAAAAAAAAAAcwEQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-21T01:26:38.255Z",
               "IsPinned": true,
@@ -52,8 +52,7 @@
               "RelativeToolTip": "Form1.Designer.cs",
               "ViewState": "AgIAAAABAAAAAAAAAADwvwoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T01:26:56.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-21T01:26:56.035Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "ToolTip": "D:\\My Projects\\Project (13) Tic-Tac-Toe Game\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-21T01:06:23.317Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-21T01:06:23.317Z"
             }
           ]
         }
