@@ -247,47 +247,8 @@ namespace Project__13__Tic_Tac_Toe_Game
 
         }
 
-        private void pb1_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
 
-        private void pb2_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb3_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb4_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb5_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb6_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb7_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb8_Click(object sender, EventArgs e)
-        {
-            PlayXOGame(sender);
-        }
-
-        private void pb9_Click(object sender, EventArgs e)
+        private void pb_Click(object sender, EventArgs e)
         {
             PlayXOGame(sender);
         }
@@ -297,4 +258,6 @@ namespace Project__13__Tic_Tac_Toe_Game
             RestartGame();
         }
     }
+
+
 }
